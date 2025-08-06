@@ -1,0 +1,25 @@
+.first{
+    background: linear-gradient(to right,rgba(248, 225, 176,0.3),rgba(114, 154, 174, 0.3),rgb(227, 205, 230,0.1));
+    height: 70px;
+    padding:   10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: blue;
+}
+@media screen and (max-width:800px){
+    
+}
+.back {
+    background-image: url("../Images/neon-handles-hero-image-desktop.jpg");
+    background-repeat: no-repeat;
+    background-attachment:scroll;
+    background-position:right; 
+    background-size: cover;
+    height: max-content;
+}
+body .foot{
+    background: linear-gradient(to right,rgb(253, 235, 197),rgb(163, 207, 228),rgba(153, 29, 169, 0.5));
+    line-height: 50px;
+}
+.swipe{
+    background: linear-gradient(to right,rgb(250, 236, 207),rgb(170, 212, 233),rgba(188, 70, 203, 0.5));
+}
