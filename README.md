@@ -6,7 +6,7 @@
 A Full Stack MERN application inspired by **LARQ Bottles**, built to practice frontend & backend integration and deployment.
 
 ## 🔹 Tech Stack
-- Frontend: React + Vite + CSS
+- Frontend: React + Bootstrap + CSS
 - Backend: Node.js + Express + MongoDB
 - State Management: Redux Toolkit
 - Deployment: Render
