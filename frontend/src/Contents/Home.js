@@ -1,4 +1,4 @@
-import pic from '../Images/BABHNNA-4.png'
+// import pic from '../Images/BABHNNA-4.png'
 import { Link } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import pic1 from '../Images/black.png'
@@ -30,20 +30,20 @@ function Larq() {
       <NavBar></NavBar>
 
       <section className="back pb-5 text-dark">
-        <h5 className="col-4 text-white" style={{ fontSize: "60px", paddingTop: "100px" }}>A handle for every mood</h5>
+        <h5 className=" text-white" style={{textAlign:"left", fontSize: "60px", paddingTop: "100px" }}>A handle for every mood</h5>
         <p className="col-5 text-white h4 mx-5" style={{ textAlign: "left", lineHeight: "40px" }}>Glow up your bottle with the new Neon Collection Handles—bold colors, solid grip, and clip-on swaps to match your vibe in seconds.</p>
         <button style={{ marginLeft: "-800px", padding: "10px", borderRadius: "20px 20px", marginTop: "35px" }} id="button">Shop Now</button>
-        <section className="card" style={{ width: "200px", float: "inline-end", marginTop: "-180px", marginRight: "100px", height: "270px" }}>
+        {/* <section className="card" style={{ width: "200px", float: "inline-end", marginTop: "-180px", marginRight: "100px", height: "270px" }}>
           <img src={pic} className="card-img-top" alt="..." style={{ width: "200px", height: "270px", backgroundColor: "aquamarine" }} />
           <div class="card-body">
             <Link style={{ textDecoration: "none" }}>New</Link>
             <h5 className="h6">Larq bottle handles</h5>
           </div>
-        </section>
+        </section> */}
       </section>
       <section>
         <div>
-          <h1 className='container' style={{ marginLeft: "-400px", color: "black" }}>LARQ Products</h1>
+          <h1 className='container' style={{ marginLeft: "-360px", color: "black" }}>LARQ Products</h1>
           <button style={{ padding: "10px", borderRadius: "20px 20px", marginTop: "-50px", float: "right", backgroundColor: "white" }} id="button">Shop Now</button>
 
         </div>
@@ -174,7 +174,9 @@ function Larq() {
                     backgroundPosition: "center"
                   }}
                 >
-                  <Link style={{ marginTop: "330px", textAlign: "left", color: "white", textDecoration: "none", padding: "7px", marginLeft: "30px" }}><h5>Larq products</h5></Link>
+<Link className="larq-link">
+  <h5>Larq Products</h5>
+</Link>
                   <button style={{ width: "100px", marginLeft: "30px" }}>Shop now</button>
                 </div>
               </Link>

@@ -40,8 +40,6 @@ const client = new MongoClient(uri, {
   }
 });
 
-
-
 async function run() {
   try {
     // Connect the client to the server	(optional starting in v4.7)
@@ -97,14 +95,14 @@ async function run() {
     // })
 
     app.delete('/onedelete/:id' , async(req,res)=>{
-      const id=req.params.id
+      const id = req.params.id
       const filter = {_id: new ObjectId(id)}
       const result = await productCollection.deleteOne(filter)
       res.send(result)
     })
 
     app.patch('/updateproduct/:id',async(req,res)=>{
-      const id=req.params.id
+      const id = req.params.id
       const update=req.body
       const filter={_id: new ObjectId(id)}
       const updateproduct={$set:{...update}}     
@@ -226,7 +224,8 @@ async function run() {
       const result=await shopProduct.updateOne(filter,updateproduct,option)
       res.send(result)
     })
-
+    
+//authentication
     app.post('/register', async (req, res) => {
   const { name, email, password } = req.body;
 
@@ -255,6 +254,7 @@ app.post('/login', async (req, res) => {
 
   res.json({ token, user: { id: user._id, name: user.name, email: user.email } });
 });
+
    
     // Send a ping to confirm a successful connection
     await client.db("admin").command({ ping: 1 });

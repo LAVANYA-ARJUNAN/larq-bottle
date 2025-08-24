@@ -6,15 +6,34 @@
     color: blue;
 }
 @media screen and (max-width:800px){
-    
+    .back {
+    background-image: url("../Images/neon-handles-hero-image-desktop.jpg");
+    background-repeat: no-repeat; 
+    background-attachment:scroll;
+    background-position:right; 
+    background-size: cover;
+    height: 600vh;
+width: 100%;
+}
+.back h5 {
+   
+  font-size: 5px;
+  text-align: left;  
+}
+.back .card{
+    width: "200px"; margin-top: "-180px"; height: "200px" ;margin-left: 40px;
+}
+
+
 }
 .back {
     background-image: url("../Images/neon-handles-hero-image-desktop.jpg");
     background-repeat: no-repeat;
     background-attachment:scroll;
-    background-position:right; 
-    background-size: cover;
-    height: max-content;
+    background-position:center; 
+    background-size:cover;
+    height: 100vh;
+    width: 100%;
 }
 body .foot{
     background: linear-gradient(to right,rgb(253, 235, 197),rgb(163, 207, 228),rgba(153, 29, 169, 0.5));

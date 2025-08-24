@@ -34,8 +34,7 @@ const Bottles = () => {
         <div>
             <NavBar />
 
-            <section className='container' style={{ color: "black" }}>
-                <div className="container" style={{ margin: "20px" }}>
+            <section className='container text-dark' >
                     <h1 style={{ textAlign: "left" }}>Shop all</h1>
 
                     <h5 style={{ textAlign: "left" }}>Discover a world of brilliant hydration.</h5>
@@ -67,10 +66,8 @@ const Bottles = () => {
                         
                     </div>
                     
-                </div>
             </section>
-            <section className='container' style={{ color: "black" }}>
-                <div className="container" style={{ margin: "20px" }}>
+            <section className='container text-dark'>
                     <h1 style={{ textAlign: "left" }}>Accessories</h1>
 
                     <div className="row " style={{ textAlign: "center" }}>
@@ -101,7 +98,6 @@ const Bottles = () => {
                         
                     </div>
                     
-                </div>
             </section>
             <Footer />
         </div>
